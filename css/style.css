@@ -1,0 +1,31 @@
+
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-position: center;
+}
+.parent{
+    opacity: 0.5;
+}
+.card{
+    background-color : rgba(255, 255, 255, 0.726);
+   
+    margin: 10px;
+}
+.card-footer{
+    text-align: right;
+}
+
+.navbar{
+    border-radius: 3px;
+    width: 100% !important;
+}
+.gitlogo{
+    width: 200px;
+    max-width: 100%;;
+}
+.logo{
+    width: 30px;
+}
