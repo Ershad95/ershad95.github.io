@@ -1,13 +1,19 @@
 
-body{
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-attachment: fixed;
-    background-position: center;
+.bg-cover{
+    background-color:#000;
+}
+.activeLinkItem{
+    box-shadow:0 4px 8px 0 lightgreen;
+}
+.deactiveLinkItem{
+    box-shadow:none;
+}
+a{
+    text-decoration:none;
+    color:#000;
 }
 .parent{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .card{
     background-color : rgba(255, 255, 255, 0.726);
@@ -28,4 +34,29 @@ body{
 }
 .logo{
     width: 30px;
+}
+.seeMoreLink {
+    border-bottom: 1px solid #000;
+}
+.seeMore{
+    text-align:right;
+}
+.repoItem{
+    transition-property:all;
+    transition-duration:500ms;
+}
+.repoItem:hover {
+    transform: scale(1.05);
+}
+ .fa{
+    color:rebeccapurple;
+}
+.nav-link{
+    font-size:1.2rem;
+}
+.fa-download {
+    color: #fff;
+}
+#contact{
+    text-align:center;
 }

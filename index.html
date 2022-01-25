@@ -2,131 +2,423 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/solid.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CV Ershad Raoufi- ارشاد رئوفی</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV Of Ershad Raoufi-Dot Net Developer">
     <meta name="keywords"
-        content="ErshadRaoufi , ارشاد رئوفی , برنامه نویس,developer,Programmer,js,c#,dot net,dev,cv,ارشاد">
+          content="ErshadRaoufi , ارشاد رئوفی , برنامه نویس,developer,Programmer,js,c#,dot net,dev,cv,ارشاد">
     <meta name="author" content="Ershad Raoufi-ارشاد رئوفی">
 </head>
 
 <body>
+    <div id="particles-js" style="background-color:#000;position:fixed;width:100%;"></div>
+    <div id="typed-strings">
+        <p>Hi!,Iam Ershad Raoufi</p>
+        <p>Iam Developer! <i style="color:palegreen" class="fa fa-file-code-o"></i></p>
+        <p>Xamarin.Forms Lover <i style="color:crimson" class="fa fa-heart"></i></p>
+        <p>Backend .NetCore Developer <i style="color:greenyellow" class="fa fa-laptop"></i></p>
+    </div>
+  
     <div class="container-fluid">
+        <a href="#" style="position:fixed;left:12px;top:7px;z-index:1">
+            <img src="profile.jpg" style="width:100px;border-radius:100%;" />
+        </a>
+        <div style="text-align: center;position:relative">
+            <h1 class="typed" style="display:inline;color:#fff !important;"></h1>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Ershad Raoufi</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#cv">My CV</a>
-                        <a class="nav-link" href="#repo">GitHub Repositores</a>
-                        <a class="nav-link" href="#act">My Activities</a>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" aria-current="page" href="#cv" style="visibility:hidden"><i class="fa fa-user-circle-o"></i> My CV </a>
+                        <a class="nav-link" aria-current="page" href="#cv"><i class="fa fa-user-circle-o"></i> My CV </a>
+                        <a class="nav-link" href="#repo"><i class="fa fa-github"></i> GitHub Repositores</a>
+                        <a class="nav-link" href="#act"><i class="fa  fa-road"></i> My Activities</a>
+                        <a class="nav-link" href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" 
-            tabindex="0">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+             tabindex="0">
             <div class="card" id="cv">
                 <div class="card-header">
-                    My CV
+                    <h4>My CV</h4>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5>Skills</h5>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-5x fa-laptop"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!--<p>.NET Programmer</p>-->
+                                    <p>Entity Framework / Microsoft SQL Server</p>
+                                    <p>FCM  / GCM / SignalR / JWT</p>
+                                    <p>ASP.net MVC / ASP.net Core Programmer</p>
+                                    <p>Create Web Service with WebApi 2 / Swagger</p>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <p> Create NopCommerce Plugin and Programmer</p>
+                                    <p>Contact REST Web Services</p>
+                                    <p>Contact GraphQL Web Services</p>
+                                    <p>Create web plugins for chrome browser</p>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <p>HTML/CSS/JS</p>
+                                    <p>Jquery</p>
+                                    <p>JSON/XML/QML</p>
+                                    <a href="#" class="btn btn-primary">Download CV <i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-5x fa-university"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Educational and academic background</h5>
+                                    <p>
+                                        M.Sc. in Computer Engineering Software
+                                    </p>
+                                    <p>
+                                        B.Sc. in Computer Engineering Software
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>
+                                        Research Background
+                                    </h5>
+                                    <p>
+                                        Persian Handwriting Detection Using OCR, KNN Algorithms (MSc Thesis)
+                                    </p>
+                                    <p>
+                                        Creating and developing android phone taxi app with FCM (undergraduate final project)
+                                    </p>
+                                    <p>
+                                        Create Android App and Search Site in Scientific Articles with Elsevier Web Service
+                                    </p>
+                                    <p>
+                                        Creating and developing an operating system emulator program with QT (Linux Desktop)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer">
-                  Update a few minutes
+                    Update a few minutes
                 </div>
-              </div>
-              <div class="card" id=repo>
+            </div>
+            <div class="card" id=repo>
                 <div class="card-header">
-                    GitHub Repositores
+                    <h4>       GitHub Repositores</h4>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">My Source Code in Github</h5>
-                  <img class="img-responsive gitlogo" src="github.png"/>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer ">
-                  Update a few minutes
-                </div>
-              </div>
-              <div class="card" id=act>
-                <div class="card-header">
-                    My Activities
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer ">
-                  Update a few minutes
-                </div>
-              </div>
+                    <h5 class="card-title">My Source Code in Github</h5>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-5x fa-github"></i>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/Clash_Of_Clans_Bot"><i class="fa fa-link"></i> Clash_Of_Clans_Bot</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/ScopusApi"><i class="fa fa-link"></i> Scopus_Api</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/MessageBox"><i class="fa fa-link"></i> Custom MessageBox for .Net</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/TakeTaxiApp"><i class="fa fa-link"></i> TakeTaxi_Android App</a>
+                            </div>
 
-              <div class="card" id=contact>
-                <div class="card-header">
-                    Contact
-                </div>
-                <div class="card-body">
-                 
-                <div class="row">
-                    <div class="col-md-3">
-                        <img class="logo" src="address.jpg">
-                        <h5 class="card-title">Address</h5>
-                        <p class="card-text">Iran,Tehran</p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/GuessNumber"><i class="fa fa-link"></i> GuessNumber</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/Scopus_App"><i class="fa fa-link"></i> Scopus_Android_App</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/Generate_StaticField_FontAwesome"> <i class="fa fa-link"></i> Generate_StaticField_FontAwesome</a>
+                            </div>
+                            <div class="repoItem">
+                                <a href="https://github.com/Ershad95/WaveMp3Player"><i class="fa fa-link"></i> WaveMp3Player .Net App</a>
+                            </div>
+                            <div class="seeMore">
+                                <a class="seeMoreLink" href="https://github.com/Ershad95?tab=repositories">
+                                    See More Repo
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  
-                     <div class="col-md-3">
-                        <img class="logo" src="phone.png">
-                        <h5 class="card-title">Tel : </h5>
-                        <p class="card-text">09216542893</p>
-                     </div>
-                     
-                      <div class="col-md-3">
-                          <img class="logo" src="instagram.png">
-                        <h5 class="card-title">Instagram : </h5>
-                        <p class="card-text">Ershad74R</p>
-                      </div>
-                      
-                     <div class="col-md-3">
-                        <img class="logo" src="git.png">
-                        <h5 class="card-title">Github : </h5>
-                        <p class="card-text">Ershad95</p>
-                     </div>
-    
-                </div>
-                
+
                 </div>
                 <div class="card-footer ">
-                  Update a few minutes
+                    Update a few minutes
                 </div>
-              </div>
-       
-           
+            </div>
+            <div class="card" id=act>
+                <div class="card-header">
+                    <h4>My Activities</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-5x fa-road"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <p> Analysis and infrastructure creation in major national projects</p>
+                            <p>Senior Programmer and Technical Manager in To upgrade EPG-Inspection System Project</p>
+                            <p>Head of programmers and programmers in Iran-Parcel Project</p>
+                            <p>Supervisor and senior programmer in the first-health project</p>
+                            <p>Development of the second phase of the AbbeyTutors International Project</p>
+                            <p> Creating and developing matin network projects, fruiting attero, chandsoo, handdokht, parsian chemistry, etc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer ">
+                    Update a few minutes
+                </div>
+            </div>
+            <div class="card" id=contact>
+                <div class="card-header">
+                    <h4>Contact</h4>
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <i class="fa fa-map fa-2x"></i>
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-text">Iran,Tehran</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa fa-2x fa-mobile"></i>
+                            <h5 class="card-title">Tel : </h5>
+                            <p class="card-text">09216542893</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa fa-instagram fa-2x"></i>
+                            <h5 class="card-title">Instagram : </h5>
+                            <p class="card-text">Ershad74R</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa fa-github fa-2x"></i>
+                            <h5 class="card-title">Github : </h5>
+                            <p class="card-text">Ershad95</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa  fa-send fa-2x"></i>
+                            <h5 class="card-title">Email : </h5>
+                            <p class="card-text">ErshadRaoufi@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card-footer ">
+                    Update a few minutes
+                </div>
+            </div>
+
+
+
         </div>
+     
     </div>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
-        <script src="js/solid.min.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script>
+        let links = document.querySelectorAll(".nav-link");
+        for (let index in links) {
+            links[index].onclick = function (e) {
+                let currentHref = e.target.attributes["href"].nodeValue.replace("#", "");
+                let currentItem = document.getElementById(currentHref);
+                currentItem.classList.add("activeLinkItem");
+            }
+        }
+        var typed = new Typed('.typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 70,
+            startDelay: 0,
+            backSpeed: 35,
+            shuffle: true,
+            loop: true,
+
+        });
+
+        /* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+        /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+        /*
+        particlesJS.load('particles-js', 'particles.json', function() {
+          console.log('particles.js loaded - callback');
+        });
+        */
+
+        /* Otherwise just put the config content (json): */
+
+        particlesJS('particles-js',
+
+            {
+                "particles": {
+                    "number": {
+                        "value": 100,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.5,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200
+                        },
+                        "push": {
+                            "particles_nb": 10
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                    "hide_card": false,
+                    "background_color": "#b61924",
+                    "background_image": "",
+                    "background_position": "50% 50%",
+                    "background_repeat": "no-repeat",
+                    "background_size": "cover"
+                }
+            }
+
+        );
+    </script>
 
 </body>
 
