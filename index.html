@@ -277,14 +277,6 @@
     <script src="js/graph.js"></script>
     <script src="js/typed.min.js"></script>
     <script>
-        let links = document.querySelectorAll(".nav-link");
-        for (let index in links) {
-            links[index].onclick = function (e) {
-                let currentHref = e.target.attributes["href"].nodeValue.replace("#", "");
-                let currentItem = document.getElementById(currentHref);
-                currentItem.classList.add("activeLinkItem");
-            }
-        }
         var typed = new Typed('.typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 70,
