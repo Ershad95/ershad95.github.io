@@ -15,6 +15,7 @@
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="CV Ershad Raoufi-رزومه ارشاد رئوفی" />
+    <meta property="og:domain" content="ershad95.github.io" />
     <meta property="og:url" content="http://ershad95.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="CV Ershad Raoufi- ارشاد رئوفی" />
@@ -38,7 +39,7 @@
 </head>
 
 <body>
-    <div id="particles-js" style="background-color:#000;position:fixed;width:100%;"></div>
+    <div id="particles-js" class="animation_js"></div>
     <div id="typed-strings">
         <p>Hi!,Iam Ershad Raoufi</p>
         <p>Iam Developer! <i style="color:palegreen" class="fa fa-file-code-o"></i></p>
@@ -47,9 +48,12 @@
     </div>
 
     <div class="container-fluid">
-        <a href="#" style="position:fixed;left:12px;top:7px;z-index:1">
-            <img alt="ErshadRaoufi_ارشاد رئوفی" src="profile.jpg" style="width:90px;border-radius:100%;" />
-        </a>
+        <div class="custom_avatar">
+            <a href="#">
+                <img alt="ErshadRaoufi_ارشاد رئوفی" src="profile.jpg" class="myAvatar" />
+            </a>
+        </div>
+       
         <div style="text-align: center;position:relative">
             <h1 class="typed" style="display:inline;color:#fff !important;"></h1>
         </div>
@@ -61,7 +65,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="#cv" style="visibility:hidden"><i
                                 class="fa fa-user-circle-o"></i> My CV </a>
@@ -225,7 +229,7 @@
                         <div class="col-md-2">
                             <i class="fa fa-5x fa-road"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-10">
                             <p> Analysis and infrastructure creation in major national projects</p>
                             <p>Senior Programmer and Technical Manager in To upgrade EPG-Inspection System Project</p>
                             <p>Head of programmers and programmers in Iran-Parcel Project</p>
@@ -240,70 +244,107 @@
                     Update a few minutes
                 </div>
             </div>
-            <div class="card" id=contact>
+
+            <div class="card" id=Certifications>
                 <div class="card-header">
-                    <h4>Contact</h4>
+                    <h4>Licenses & Certifications</h4>
                 </div>
-                <div class="card-body">
-
+                <div class="card-body center">
                     <div class="row">
-
-                        <div class="col-md-2">
-                            <i class="fa fa-map fa-2x"></i>
-                            <h5 class="card-title">Address</h5>
-                            <p class="card-text">Iran,Tehran</p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <i class="fa fa-2x fa-mobile"></i>
-                            <h5 class="card-title">Tel : </h5>
-                            <p class="card-text">
-                                <a target="_blank" href="tel:09216542893">09216542893</a>
-                            </p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <i class="fa fa-instagram fa-2x"></i>
-                            <h5 class="card-title">Instagram : </h5>
-                            <p class="card-text">
-                                <a target="_blank" href="https://instagram/Ershad74R">Ershad74R</a>
-                            </p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <i class="fa fa-github fa-2x"></i>
-                            <h5 class="card-title">Github : </h5>
-                            <p class="card-text">
-                                <a title="Ershad Raoufi GitHub" target="_blank"
-                                    href="https://github.com/Ershad95">Ershad95</a>
-                            </p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <i class="fa  fa-send fa-2x"></i>
-                            <h5 class="card-title">Email : </h5>
-                            <p class="card-text">
-                                <a target="_blank" href="mailto:ErshadRaoufi@gmail.com">ErshadRaoufi@gmail.com</a>
-                            </p>
-                        </div>
-
-                        <div class="col-md-2">
-                            <i class="fa fa-film fa-2x"></i>
-                            <h5 class="card-title">Aparat : </h5>
-                            <p class="card-text">
-                                <a target="_blank" title='Aparat' href="https://www.aparat.com/Ershad74">Ershad74</a>
-                            </p>
-                        </div>
+                            <div class="col-md-4">
+                                <figure>
+                                    <img class="certificate" src="certificates/certificate_blazor.jpg" loading="lazy" alt="daneshjooyar Blazor Certificate_مدرک Blazor دانشجویار"/>
+                                    <figcaption>
+                                        <a title="دانشجویار-daneshjooyar" target="_blank" href="https://daneshjooyar.com/cf/FmOBksPYHL/">Daneshjooyar Certification For Asp.net Core/Blazor</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+    
+                            <div class="col-md-4">
+                                <figure>
+                                    <img class="certificate" src="certificates/certificate_css_html.jpg" loading="lazy" alt="daneshjooyar CSS/HTML Certificate_مدرک CSS/HTML دانشجویار"/>
+                                    <figcaption>
+                                        <a title="دانشجویار-daneshjooyar" target="_blank" href="https://www.daneshjooyar.com/cf/yD4LjY5BFg/">Daneshjooyar Certification For CSS/HTML</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+    
+                            <div class="col-md-4">
+                                <figure>
+                                    <img class="certificate" src="certificates/ctcore.png" loading="lazy" alt="Udemy Certification Asp.net MVC Core MasterClass"/>
+                                    <figcaption>
+                                        <a title="Udemy" target="_blank" href="https://www.udemy.com/">Udemy Certification Asp.net MVC Core MasterClass</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
                     </div>
-
-                </div>
+                   
                 <div class="card-footer ">
                     Update a few minutes
                 </div>
             </div>
+        </div>
 
+        <div class="card" id=contact>
+            <div class="card-header">
+                <h4>Contact</h4>
+            </div>
+            <div class="card-body">
 
+                <div class="row">
 
+                    <div class="col-md-2">
+                        <i class="fa fa-map fa-2x"></i>
+                        <h5 class="card-title">Address</h5>
+                        <p class="card-text">Iran,Tehran</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fa fa-2x fa-mobile"></i>
+                        <h5 class="card-title">Tel : </h5>
+                        <p class="card-text">
+                            <a target="_blank" href="tel:09216542893">09216542893</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fa fa-instagram fa-2x"></i>
+                        <h5 class="card-title">Instagram : </h5>
+                        <p class="card-text">
+                            <a target="_blank" href="https://instagram/Ershad74R">Ershad74R</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fa fa-github fa-2x"></i>
+                        <h5 class="card-title">Github : </h5>
+                        <p class="card-text">
+                            <a title="Ershad Raoufi GitHub" target="_blank"
+                                href="https://github.com/Ershad95">Ershad95</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fa  fa-send fa-2x"></i>
+                        <h5 class="card-title">Email : </h5>
+                        <p class="card-text">
+                            <a target="_blank" href="mailto:ErshadRaoufi@gmail.com">ErshadRaoufi@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fa fa-film fa-2x"></i>
+                        <h5 class="card-title">Aparat : </h5>
+                        <p class="card-text">
+                            <a target="_blank" title='Aparat' href="https://www.aparat.com/Ershad74">Ershad74</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer ">
+                Update a few minutes
+            </div>
         </div>
 
     </div>
@@ -319,152 +360,7 @@
 
     <script src="js/graph.js"></script>
     <script src="js/typed.min.js"></script>
-    <script>
-        var typed = new Typed('.typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 70,
-            startDelay: 0,
-            backSpeed: 35,
-            shuffle: true,
-            loop: true,
-
-        });
-
-        /* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-        /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-        /*
-        particlesJS.load('particles-js', 'particles.json', function() {
-          console.log('particles.js loaded - callback');
-        });
-        */
-
-        /* Otherwise just put the config content (json): */
-
-        particlesJS('particles-js',
-
-            {
-                "particles": {
-                    "number": {
-                        "value": 100,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": true,
-                            "speed": 1,
-                            "opacity_min": 0.5,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 5,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200
-                        },
-                        "push": {
-                            "particles_nb": 10
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true,
-                "config_demo": {
-                    "hide_card": false,
-                    "background_color": "#b61924",
-                    "background_image": "",
-                    "background_position": "50% 50%",
-                    "background_repeat": "no-repeat",
-                    "background_size": "cover"
-                }
-            }
-
-        );
-    </script>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
