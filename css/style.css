@@ -95,6 +95,12 @@ a {
     width: 70%;
     border-radius: 10px;
     max-height: 200px;
+    /* box-shadow: 0 4px 8px 0 #000; */
+}
+.certificate_badge{
+    position:relative;
+    top:-88px;
+    left:20px;
 }
 .myAvatar{
     width:90px;
