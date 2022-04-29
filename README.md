@@ -1,8 +1,8 @@
 #### https://ershad95.github.io
 #### Hello every one Iam Ershad Raoufi,
 #### M.sc Computer Software👨‍🎓
-####.Net Developer 💻 👨‍💻⌨️☕🖱️🍩🍫
-####.Net Core MVC Tech 🎮📱🔲💻 
+#### .Net Developer 💻 👨‍💻⌨️☕🖱️🍩🍫
+#### .Net Core MVC Tech 🎮📱🔲💻 
 #### I love Xamarin.Forms❤️😎
 #### My Aparat link : https://aparat.com/ershad74
 
