@@ -12,20 +12,9 @@ checkIp();
   
          if (this.status === 200 && this.readyState == this.DONE){
              
-             const table = document.querySelector(".check-ip-wrapper table");
-             table.classList.toggle('ds-none');
-  
+             
              const data = this.response;
-              
-             const countryData = [data.query , data.country , `<img id="country-flag" src="https://www.countryflags.io/${data.countryCode}/flat/64.png" style="background-image: none;">` , data.countryCode , data.regionName , data.city , data.as]
-  
-             const tdTableElement = document.querySelectorAll('.check-ip-wrapper table td');
-  
-             let counter = 0;
-             for(const element of tdTableElement){
-                 element.innerHTML = countryData[counter];
-                 counter++;
-             }
+             console.info(data);
   
          }
               
