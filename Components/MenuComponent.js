@@ -1,33 +1,45 @@
+import PrepareStylesComponent from '../js/PrepareStylesComponent.js';
 class Menu extends HTMLElement {
     constructor() {
         super();
-        const html=`<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#cv" style="visibility:hidden">
-                    <i class="fa fa-user-circle-o"></i> My CV
+        const html=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="https://ershad95.github.io" ><i
+                            class="fa fa-user-circle-o"></i>صفحه اصلی</a>
+
+                    <a title="کانال آپارات ارشاد رئوفی" class="nav-link"
+                        href="https://www.aparat.com/Ershad74/%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF_%D8%B1%D8%A6%D9%88%D9%81%DB%8C"><i
+                            class="fa fa-github"></i>لینک کانال آپارات</a>
+                    <a title="کانال youtube ارشاد رئوفی" class="nav-link" href="https://ershad95.github.io/#repo"><i
+                            class="fa fa-github"></i>لینک کانال Yotube</a>
+                    <a title="درباره ارشاد رئوفی" class="nav-link" href="https://ershad95.github.io/#act"><i
+                            class="fa  fa-road"></i>درباره
+                        من</a>
+                    <a title="ارتباط با ارشاد رئوفی" class="nav-link" href="https://ershad95.github.io/#contact"><i
+                            class="fa fa-phone-square"></i>ارتباط با من</a>
+
+                    </a>
+                    <a title="رزومه ارشاد رئوفی" class="nav-link" href="cv.pdf"><i
+                        class="fa fa-phone-square"></i>رزومه من</a>
+
                 </a>
-                <a class="nav-link" href="#aparat"><i class="fa fa-film"></i>My Aparat Video</a>
-                <a class="nav-link" href="#repo"><i class="fa fa-github"></i> GitHub Repositores</a>
-                <a class="nav-link" href="#act"><i class="fa  fa-road"></i> My Activities</a>
-                <a class="nav-link" href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
-                <a class="nav-link" href="#Certifications"><i class="fa fa-certificate"></i>
-                    Certifications
-                </a>
-                <a class="nav-link" href="/persian.html"><i class="fa fa-flag"></i>
-                    Persian Version
-                </a>
+                </div>
             </div>
-        </div>`;
+        </div>
+    </nav>`;
         
         // Create a shadow root
         var shadow = this.attachShadow({ mode: 'open' });
         var h1tag = document.createElement("div");
         h1tag.innerHTML = html;
+        PrepareStylesComponent(shadow);
         shadow.appendChild(h1tag);
     }
 }

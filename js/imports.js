@@ -8,7 +8,7 @@ import Nuget from '../Components/NugetComponent.js';
 import Repository from '../Components/RepositoryComponent.js';
 import Skill from '../Components/SkillComponent.js';
 import Typestring from '../Components/TypestringComponent.js';
-import sweetalert from 'sweetalert';
+import Header from '../Components/HeaderComponent.js';
 
 
 
@@ -22,3 +22,4 @@ customElements.define('contact-tag',Contact);
 customElements.define('repository-tag',Repository);
 customElements.define('skill-tag',Skill);
 customElements.define('typestring-tag',Typestring);
+customElements.define('header-tag',Header);
