@@ -19,7 +19,7 @@ function PrepareStyleLinks(shadow){
         
         shadow.appendChild(styleCSS);
         shadow.appendChild(bootstrapCSS);
-        shadow.appendChild(PrepareStyle);
+        // shadow.appendChild(PrepareStyle);
         shadow.appendChild(fonticon);
         return shadow;
 }
