@@ -1,4 +1,5 @@
 class Skill extends HTMLElement {
+
     constructor() {
         const html = ` <div class="card" id="cv">
         <div class="card-header">
