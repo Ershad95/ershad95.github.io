@@ -13,11 +13,15 @@ html {
 	font-family: 'seo90', Arial, Helvetica, sans-serif;
 	direction: rtl;
 	font-size: 13px;
-	background-color: #faf4f4;
+	
+	overflow-x: hidden;
 }
 
 img {
 	max-width: 100%;
+	border-radius: 100%;
+	width: 100px;
+	margin-top: 15px;
 }
 
 li {
