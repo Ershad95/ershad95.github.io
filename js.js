@@ -1,0 +1,1 @@
+const a = {foo(){console.log("Hello , World")},name:"Ershad",age:26,}
