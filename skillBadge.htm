@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script>
+        function loaddata() {
+            console.log("Loaded");
+            document.getElementById("loading").className = "d-none";
+            document.getElementsByTagName("article")[0].className = "d-block";
+        }
+    </script> -->
     <title>CV Ershad Raoufi- ارشاد رئوفی</title>
     <link rel="icon" type="image/x-icon" href="/fav.ico">
     <!-- Open Graph Metadata -->
@@ -38,18 +45,29 @@
     <meta name="keywords"
         content="ErshadRaoufi , ارشاد رئوفی , برنامه نویس,developer,Programmer,js,c#,dot net,dev,cv,ارشاد">
     <meta name="author" content="Ershad Raoufi-ارشاد رئوفی">
-
     <style>
+        .row{
+            text-align: center;
+        }
         .navlink-bar {
             position: fixed;
             right: 0px;
             height: 100%;
             padding: 10px;
             background-color: rgb(224, 0, 123);
-            box-shadow: 0 4px 8px 0 gray;;
+            box-shadow: 0 4px 8px 0 gray;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        a {
             color: #fff;
         }
-        a{
+
+        a:hover {
             color: #fff;
         }
 
@@ -57,134 +75,132 @@
             width: 100%;
             border-radius: 20px;
         }
-        .text-bar{
-            box-shadow: 0 4px 8px 0 gray;;
+
+        .text-bar {
+            box-shadow: 0 4px 8px 0 gray;
             position: fixed;
             left: 0;
             height: 100%;
             display: flex;
             background-color: rgb(255, 52, 211);
-            
+
         }
-        .des{
+
+        .des {
             display: none;
-          
+
         }
+
         @media (max-width: 900px) {
             .navlink-bar {
                 display: none !important;
             }
-            .des{
+
+            .des {
                 display: block;
                 padding: 10px
             }
-            .text-bar{
+
+            .text-bar {
                 display: none;
             }
         }
-        .text-route{
+
+        .text-route {
             display: flex;
             color: #fff;
             transform: rotate(270deg);
             align-items: center;
         }
-       .home{
-           position: fixed;
-           bottom: 20px;
-           right: 10px;
-           border-radius: 100%;
-           background-color: purple;
-           color: #fff;
-           width: 40px;
-           height: 40px;
-           z-index: 9999999999;
-           text-align: center;
-           line-height: 37px;
-       }
-       i{
-           color: #fff !important;
-           text-align: center;
-       }
-       .linkedin{
-           position: fixed;
-           bottom: 20px;
-           left: 10px;
-           border-radius: 100%;
-           background-color: purple;
-           color: #fff;
-           width: 40px;
-           animation: pulse 1000ms infinite;
-           height: 40px;
-           z-index: 9999999999;
-           text-align: center;
-           line-height: 37px;
-       }
-       .row{
-           text-align: center;
-       }
-       @keyframes pulse {
-           0%{
-               box-shadow: rgb(156, 50, 243) 0 0 0 0;
-           }
-           100%{
-            box-shadow: rgb(211, 2, 211) 0 0 0 5px;
-           }
-       }
+
+        .home {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            border-radius: 100%;
+            background-color: purple;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            z-index: 9999999999;
+            text-align: center;
+            line-height: 37px;
+        }
+
+        i {
+            color: #fff !important;
+            text-align: center;
+        }
+
+        .linkedin {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            border-radius: 100%;
+            background-color: purple;
+            color: #fff;
+            width: 40px;
+            animation: pulse 1000ms infinite;
+            height: 40px;
+            z-index: 9999999999;
+            text-align: center;
+            line-height: 37px;
+        }
+
+
+
+        @keyframes pulse {
+            0% {
+                box-shadow: rgb(156, 50, 243) 0 0 0 0;
+            }
+
+            100% {
+                box-shadow: rgb(211, 2, 211) 0 0 0 5px;
+            }
+        }
     </style>
 </head>
 
-<body>
-    <div class="home">
-        <a href="/">
-            <i class="fa fa-home"></i>
-        </a>
-    </div>
-    <div class="linkedin">
-        <a href="https://www.linkedin.com/in/ershad74/">
-            <i class="fa fa-linkedin"></i>
-        </a>
-    </div>
+<body onload="loaddata()">
     <main>
         <article>
-            
             <div class="navlink-bar">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">c#</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">JS</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">.Net</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">Front</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">HTML</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">CSS</a></li>
-                    <li><a href="https://www.linkedin.com/in/ershad74/details/skills/">OOP</a></li>
-                </ul>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">c#</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">JS</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">.Net</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">Front</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">HTML</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">CSS</a>
+                <a href="https://www.linkedin.com/in/ershad74/details/skills/">OOP</a>
             </div>
             <div class="text-bar">
                 <h5 class="text-route">Skill Badges</h5>
             </div>
             <div class="container">
-                
-                <div class="row" >
+
+                <div class="row">
                     <h1>Earned Skill Badges in Linkedin By Ershad Raoufi</h1>
-                    <hr>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-md-4">
                         <a title="C#_Badge_Ershad_Raoufi" href="https://www.linkedin.com/in/ershad74/details/skills/">
-                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_C#" width="100%" src="/Badge/cSharp.jpeg" />
+                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_C#" width="100%"
+                                src="/Badge/cSharp.jpeg" />
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="https://www.linkedin.com/in/ershad74/details/skills/">
                             <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_JS" width="100%" src="/Badge/Js.jpeg" />
                         </a>
-        
+
                     </div>
                     <div class="col-md-4">
                         <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML" width="100%" src="/Badge/Html.jpeg" />
+                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML" width="100%"
+                                src="/Badge/Html.jpeg" />
                         </a>
-        
+
                     </div>
                 </div>
                 <div class="row">
@@ -192,25 +208,40 @@
                         <a href="https://www.linkedin.com/in/ershad74/details/skills/">
                             <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_CSS" width="100%" src="/Badge/CSS.jpeg" />
                         </a>
-        
+
                     </div>
                     <div class="col-md-4">
                         <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_.Net" width="100%" src="/Badge/dotNet.jpeg" />
+                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_.Net" width="100%"
+                                src="/Badge/dotNet.jpeg" />
                         </a>
-        
+
                     </div>
                     <div class="col-md-4">
                         <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML" width="100%" src="/Badge/FrontEndDeveloper.jpeg" />
+                            <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML" width="100%"
+                                src="/Badge/FrontEndDeveloper.jpeg" />
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="home">
+                <a href="/">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/ershad74/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
         </article>
     </main>
-   
-
+    <!-- <div id="loading">
+        <div style="width: 100px">
+            <img src="Images/profile.jpg" />
+        </div>
+    </div> -->
 </body>
 
 </html>

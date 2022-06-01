@@ -1,1 +1,6 @@
-const a = {foo(){console.log("Hello , World")},name:"Ershad",age:26,}
+window.onloadeddata = function(){
+    console.assert("onLoadedData")
+}
+window.onload = function(){
+    console.assert("OnLoad")
+}
