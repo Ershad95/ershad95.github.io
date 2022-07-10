@@ -7,7 +7,40 @@
 	font-family: 'seo90';
 	src: url('fonts/Vazir-Light-FD.woff') format('woff');
 }
+.badge{
+	font-size: 15px;
+}
+div.header_item{
+	padding:  10px;
+	
+	border-radius: 5px;
 
+	
+	box-shadow: 0 4px 8px 0 gray;
+}
+p.short-desc{
+	text-align: justify;
+}
+div.col-md-7>figure>img{
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 gray;
+}
+section.parent_certificates>figure{
+	display: inline-block;
+}
+img.certficate_blog{
+	width: 230px;
+	max-width: 100%;
+	border: 2px solid #000;
+	display: inline-block !important;
+	margin: 10px !important;
+}
+div.card-header > h2{
+	line-height: 1.8;
+}
+section.parent_certificates{
+	text-align: center;
+}
 body,
 html {
 	font-family: 'seo90', Arial, Helvetica, sans-serif;
@@ -17,10 +50,10 @@ html {
 	overflow-x: hidden;
 }
 
-img {
+ img.profile {
 	max-width: 100%;
 	border-radius: 100%;
-	width: 100px;
+	width:100px;
 	margin-top: 15px;
 }
 
