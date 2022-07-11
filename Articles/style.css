@@ -28,12 +28,16 @@ div.col-md-7>figure>img{
 section.parent_certificates>figure{
 	display: inline-block;
 }
-img.certficate_blog{
+
+img.certficate_blog,img.certficate_blog_2{
 	width: 230px;
 	max-width: 100%;
 	border: 2px solid #000;
 	display: inline-block !important;
 	margin: 10px !important;
+}
+img.certficate_blog_2{
+	width: 430px;
 }
 div.card-header > h2{
 	line-height: 1.8;
