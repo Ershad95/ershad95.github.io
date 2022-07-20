@@ -21,6 +21,9 @@ div.header_item{
 p.short-desc{
 	text-align: justify;
 }
+audio{
+	width: 100%;
+}
 div.col-md-7>figure>img{
 	border-radius: 10px;
 	box-shadow: 0 2px 4px 0 gray;
