@@ -1,52 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://ershad95.github.io/</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://ershad95.github.io/</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/Articles/</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/Articles/</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/persian/</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/Articles/%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA_%D8%AF%D8%B1_%D8%AD%D9%88%D8%B2%D9%87_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87_%D9%86%D9%88%DB%8C%D8%B3%DB%8C.html</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/cv.pdf</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/persian</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/skillBadge.htm</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/cv.pdf</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/aparat.html</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/skillBadge.htm</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/certificate.htm</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ershad95.github.io/aparat.html</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ershad95.github.io/index.html</loc>
-  <lastmod>2022-06-01T15:49:51+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://ershad95.github.io/certificate.htm</loc>
+	<lastmod>2022-07-20T10:52:43+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
+<url>
+	<loc>https://ershad95.github.io/Articles/%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA_%D9%85%D8%AF%D8%B1%DA%A9_%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86_%D8%AF%D8%B1_%D8%AD%D9%88%D8%B2%D9%87_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87_%D9%86%D9%88%DB%8C%D8%B3%DB%8C.html</loc>
+	<lastmod>2022-07-20T10:52:44+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ershad95.github.io/Articles/%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA_%D9%85%D8%AF%D8%B1%DA%A9_%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86_%D8%AF%D8%B1_%D8%AD%D9%88%D8%B2%D9%87_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87_%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%82%D8%B3%D9%85%D8%AA%DB%B2.html</loc>
+	<lastmod>2022-07-20T10:52:44+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ershad95.github.io/persian/</loc>
+	<lastmod>2022-07-20T10:52:45+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ershad95.github.io/index.html</loc>
+	<lastmod>2022-07-20T10:52:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
