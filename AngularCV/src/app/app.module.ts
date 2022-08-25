@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitComponent } from './git/git.component';
+import { DownloadCVComponent } from './download-cv/download-cv.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    GitComponent
+    GitComponent,
+    DownloadCVComponent
   ],
   imports: [
     BrowserModule,

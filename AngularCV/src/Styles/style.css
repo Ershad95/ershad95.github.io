@@ -89,7 +89,8 @@ a {
     position:fixed;
     left:12px;
     top:7px;
-    z-index:1
+    z-index:1;
+   
 }
 .center{
     text-align: center;
@@ -114,6 +115,7 @@ iframe{
 .myAvatar{
     width:90px;
     border-radius:100%;
+    border: 2px solid purple;
 }
 @media (max-width: 800px) {
     .navbar  {
