@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-cv",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/Styles/bootstrap.min.css",
+              "src/Styles/font-awesome.min.css",
+              "src/Styles/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/Scripts/typed.min.js",
+              "src/Scripts/graph.js",
+              "src/Scripts/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
