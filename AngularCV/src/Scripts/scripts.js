@@ -1,14 +1,5 @@
 
 
-var typed = new Typed('.typed', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 70,
-    startDelay: 0,
-    backSpeed: 35,
-    shuffle: true,
-    loop: true,
-
-});
 
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
@@ -143,3 +134,13 @@ particlesJS('particles-js',
     }
 
 );
+
+var typed = new Typed('.typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 70,
+    startDelay: 0,
+    backSpeed: 35,
+    shuffle: true,
+    loop: true,
+
+});
