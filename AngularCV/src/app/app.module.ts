@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { GitComponent } from './git/git.component';
 import { DownloadCVComponent } from './download-cv/download-cv.component';
 import { LinkedinComponent } from './linkedin/linkedin.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LinkedinComponent } from './linkedin/linkedin.component';
     ProfileComponent,
     GitComponent,
     DownloadCVComponent,
-    LinkedinComponent
+    LinkedinComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { LinkedinComponent } from './linkedin/linkedin.component';
       {path:"home",component:HomeComponent},
       {path:"skillBadge",component:LinkedinComponent},
       {path:"git",component:GitComponent},
-      {path:"",redirectTo:"/home",pathMatch:"full"}
+      {path:"",redirectTo:"/home",pathMatch:"full"},
+      {path:"**",component:NotFoundComponent}
     ])
   ],
   providers: [],
