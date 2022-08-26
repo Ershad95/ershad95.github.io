@@ -11,7 +11,7 @@ export class CertificateComponent implements OnInit {
 
 
   certificates:CertificateModel[]=[];
-  @Input() showInhomePage : boolean=true;
+  @Input() showInhomePage : boolean=false;
   constructor(private service : CertificateService) { 
     
   }

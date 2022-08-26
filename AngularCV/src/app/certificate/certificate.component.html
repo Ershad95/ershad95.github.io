@@ -1,5 +1,5 @@
 <app-profile footer="Update a few minutes" id="Certifications" title="Licenses & Certifications">
-    <div class="col-md-4" *ngFor="let item from certificates">
+    <div class="col-md-4 center" *ngFor="let item of certificates">
         <figure>
             <!-- <i class="fa fa-certificate fa-2x certificate_badge"></i> -->
             <img title="ارشاد رئوفی" class="certificate" src="{{item.imageUrl}}" loading="lazy"
@@ -8,5 +8,12 @@
                 <a title="Udemy" target="_blank" href="{{item.url}}">{{item.title}}</a>
             </figcaption>
         </figure>
+    </div>
+    <div class="row" *ngIf="showInhomePage">
+        <div class="seeMore">
+            <a class="seeMoreLink" routerLink="/certificate">
+                See All
+            </a>
+        </div>
     </div>
 </app-profile>

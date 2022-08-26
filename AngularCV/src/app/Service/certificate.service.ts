@@ -25,7 +25,7 @@ export class CertificateService {
       imageUrl: "../../assets/certificates/jq.jpg",
       altImage: "daneshjooyar JS Certificate_مدرک JS دانشجویار_ارشاد رئوفی",
       url: "https://daneshjooyar.com/cf/FmOBksPYHL/",
-      showInHomePage: false,
+      showInHomePage: true,
       title: "soloLearn Certification For JQuery"
     },
     {

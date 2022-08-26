@@ -33,6 +33,7 @@ import { CertificateComponent } from './certificate/certificate.component';
       {path:"skillBadge",component:LinkedinComponent},
       {path:"git",component:GitComponent},
       {path:"contact",component:ContactComponent},
+      {path:"certificate",component:CertificateComponent},
       {path:"",redirectTo:"/home",pathMatch:"full"},
       {path:"**",component:NotFoundComponent}
     ])
