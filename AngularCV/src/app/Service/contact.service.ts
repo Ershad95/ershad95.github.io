@@ -3,7 +3,7 @@ import ContactModel from '../Model/ContactModel'
 @Injectable({
   providedIn: 'root'
 })
-export class ContactService {
+ class ContactService {
 
   private source : ContactModel[]=[
     {icon:"fa-map",title:"Address",value:"Iran,Tehran",withLink:false},
@@ -19,3 +19,5 @@ export class ContactService {
     return this.source;
   }
 }
+
+export default ContactService;

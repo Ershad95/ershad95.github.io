@@ -1,0 +1,16 @@
+<div class="col-md-2">
+    <i class="fa {{contact?.icon}} fa-2x"></i>
+    <h5 class="card-title">{{contact?.title}}</h5>
+    <span *ngIf="contact?.withLink then withLink else withoutLink"></span>
+
+    <ng-template #withLink>
+        <p class="card-text">
+            <a target="_blank" title='Aparat' href="{{contact?.url}}">{{contact?.value}}</a>
+        </p>
+    </ng-template>
+    <ng-template #withoutLink>
+        <p class="card-text">
+            {{contact?.value}}
+        </p>
+    </ng-template>
+</div>

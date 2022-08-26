@@ -9,6 +9,8 @@ import { GitComponent } from './git/git.component';
 import { DownloadCVComponent } from './download-cv/download-cv.component';
 import { LinkedinComponent } from './linkedin/linkedin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactItemComponent } from './contact/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     GitComponent,
     DownloadCVComponent,
     LinkedinComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ContactComponent,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule,
