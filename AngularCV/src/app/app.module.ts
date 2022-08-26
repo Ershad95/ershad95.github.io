@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactItemComponent } from './contact/contact-item/contact-item.component';
 import { CertificateComponent } from './certificate/certificate.component';
+import { AparatComponent } from './aparat/aparat.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CertificateComponent } from './certificate/certificate.component';
     NotFoundComponent,
     ContactComponent,
     ContactItemComponent,
-    CertificateComponent
+    CertificateComponent,
+    AparatComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { CertificateComponent } from './certificate/certificate.component';
       {path:"git",component:GitComponent},
       {path:"contact",component:ContactComponent},
       {path:"certificate",component:CertificateComponent},
+      {path:"aparat",component:AparatComponent},
       {path:"",redirectTo:"/home",pathMatch:"full"},
       {path:"**",component:NotFoundComponent}
     ])
