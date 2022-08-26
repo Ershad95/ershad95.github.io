@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitComponent } from './git/git.component';
 import { DownloadCVComponent } from './download-cv/download-cv.component';
+import { LinkedinComponent } from './linkedin/linkedin.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import { DownloadCVComponent } from './download-cv/download-cv.component';
     HomeComponent,
     ProfileComponent,
     GitComponent,
-    DownloadCVComponent
+    DownloadCVComponent,
+    LinkedinComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {path:"home",component:HomeComponent},
+      {path:"skillBadge",component:LinkedinComponent},
       {path:"git",component:GitComponent},
       {path:"",redirectTo:"/home",pathMatch:"full"}
     ])

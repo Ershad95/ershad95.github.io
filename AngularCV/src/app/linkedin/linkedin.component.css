@@ -1,0 +1,114 @@
+
+        .row{
+            text-align: center;
+        }
+        .navlink-bar {
+            position: fixed;
+            right: 0px;
+            height: 100%;
+            padding: 10px;
+            background-color: rgb(224, 0, 123);
+            box-shadow: 0 4px 8px 0 gray;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .text-bar {
+            box-shadow: 0 4px 8px 0 gray;
+            position: fixed;
+            left: 0;
+            height: 100%;
+            display: flex;
+            background-color: rgb(255, 52, 211);
+
+        }
+
+        .des {
+            display: none;
+
+        }
+
+        @media (max-width: 900px) {
+            .navlink-bar {
+                display: none !important;
+            }
+
+            .des {
+                display: block;
+                padding: 10px
+            }
+
+            .text-bar {
+                display: none;
+            }
+        }
+
+        .text-route {
+            display: flex;
+            color: #fff;
+            transform: rotate(270deg);
+            align-items: center;
+        }
+
+        .home {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            border-radius: 100%;
+            background-color: purple;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            z-index: 9999999999;
+            text-align: center;
+            line-height: 37px;
+        }
+
+        i {
+            color: #fff !important;
+            text-align: center;
+        }
+
+        .linkedin {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            border-radius: 100%;
+            background-color: purple;
+            color: #fff;
+            width: 40px;
+            animation: pulse 1000ms infinite;
+            height: 40px;
+            z-index: 9999999999;
+            text-align: center;
+            line-height: 37px;
+        }
+
+
+
+        @keyframes pulse {
+            0% {
+                box-shadow: rgb(156, 50, 243) 0 0 0 0;
+            }
+
+            100% {
+                box-shadow: rgb(211, 2, 211) 0 0 0 5px;
+            }
+        }
+  
