@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import ContactService from '../Service/contact.service'
 import ContactModel from '../Model/ContactModel'
 @Component({
@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
 
 
    contactItems:ContactModel[]=[];
+   @Input() showInHomePage:boolean=false;
   constructor(private contactService : ContactService) { 
      this.contactItems = contactService.GetAllcontacts();
   }
