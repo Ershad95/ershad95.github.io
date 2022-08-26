@@ -11,6 +11,7 @@ import { LinkedinComponent } from './linkedin/linkedin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactItemComponent } from './contact/contact-item/contact-item.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactItemComponent } from './contact/contact-item/contact-item.compon
     LinkedinComponent,
     NotFoundComponent,
     ContactComponent,
-    ContactItemComponent
+    ContactItemComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

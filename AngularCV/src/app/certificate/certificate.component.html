@@ -1,0 +1,12 @@
+<app-profile footer="Update a few minutes" id="Certifications" title="Licenses & Certifications">
+    <div class="col-md-4" *ngFor="let item from certificates">
+        <figure>
+            <!-- <i class="fa fa-certificate fa-2x certificate_badge"></i> -->
+            <img title="ارشاد رئوفی" class="certificate" src="{{item.imageUrl}}" loading="lazy"
+                alt="{{item.altImage}}" />
+            <figcaption>
+                <a title="Udemy" target="_blank" href="{{item.url}}">{{item.title}}</a>
+            </figcaption>
+        </figure>
+    </div>
+</app-profile>
