@@ -1,5 +1,11 @@
 <app-profile footer="Update a few minutes" id="Certifications" title="Licenses & Certifications">
-    
+    <div class="col-md-12 center" *ngIf="!showInhomePage">
+        <h1>Ershad Raoufi's certificates
+        </h1>
+        <app-download-cv></app-download-cv>
+        <hr>
+    </div>
+   
     <div class="col-md-4 center" *ngFor="let item of certificates">
         <figure>
             <!-- <i class="fa fa-certificate fa-2x certificate_badge"></i> -->
