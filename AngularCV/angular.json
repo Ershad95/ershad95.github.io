@@ -26,7 +26,6 @@
               "src/Styles/font-awesome.min.css",
               "src/Styles/bootstrap.min.css",
               "src/Styles/style.css"
-       
             ],
             "scripts": [
               "src/Scripts/typed.min.js",

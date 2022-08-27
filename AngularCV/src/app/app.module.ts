@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactItemComponent } from './contact/contact-item/contact-item.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { AparatComponent } from './aparat/aparat.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,11 @@ import { AparatComponent } from './aparat/aparat.component';
     ContactComponent,
     ContactItemComponent,
     CertificateComponent,
-    AparatComponent
+    AparatComponent,
+    LikeComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     RouterModule.forRoot([
       {path:"home",component:HomeComponent},

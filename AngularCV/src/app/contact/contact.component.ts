@@ -9,10 +9,10 @@ import ContactModel from '../Model/ContactModel'
 export class ContactComponent implements OnInit {
 
 
-   contactItems:ContactModel[]=[];
-   @Input() showInHomePage:boolean=false;
-  constructor(private contactService : ContactService) { 
-     this.contactItems = contactService.GetAllcontacts();
+  contactItems: ContactModel[] = [];
+  @Input() showInHomePage: boolean = false;
+  constructor(private contactService: ContactService) {
+    this.contactItems = contactService.GetAllcontacts();
   }
 
   ngOnInit(): void {

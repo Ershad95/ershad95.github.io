@@ -5,6 +5,7 @@ import CertificateModel from "../Model/CertificateModel"
 })
 export class CertificateService {
 
+  
   private source: CertificateModel[] = [
 
     {
@@ -74,8 +75,15 @@ export class CertificateService {
   constructor() { }
 
 
-  GetAllCertificate(): CertificateModel[] {
-    return this.source;
+  GetAllCertificate(searchItem:string=""): CertificateModel[] {
+    let sourceResult : CertificateModel[] = this.source;
+    if(searchItem && searchItem.length>0){
+      searchItem=searchItem.toLowerCase();
+      sourceResult = sourceResult
+              .filter(x=>x.title.toLowerCase().includes(searchItem));
+    }
+    
+    return sourceResult;
   }
   GetHomeCertificate(): CertificateModel[] {
     return this.source.filter(x => x.showInHomePage);
