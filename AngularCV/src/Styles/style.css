@@ -68,6 +68,9 @@ a {
     color: rebeccapurple;
 }
 
+.fa-spin{
+    color:#fff ;
+}
 .nav-link {
     font-size: 1.2rem;
 }
@@ -125,6 +128,19 @@ iframe{
         position: relative;
         text-align: center;
     }
-  }
+}
+footer{
+    width:100%;
+    color:#fff;
+    z-index:100;
+    position:relative;
+    bottom:0px;
+    background:#000;
+    opacity:0.7
+}
 
-
+footer>p{
+    line-height:3;
+    text-align:center;
+    margin:0
+}
