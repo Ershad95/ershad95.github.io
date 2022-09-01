@@ -1,51 +1,56 @@
-<app-profile title="Badges" footer="Update a few minutes" id="badge">
+<app-profile title="Badges" footer="Update a few minutes" id="badge" class="center">
     
 
     <div class="row">
-        <h1>Earned Skill Badges in Linkedin By Ershad Raoufi</h1>
+        <h4>Earned Skill Badges in Linkedin By Ershad Raoufi</h4>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <a title="C#_Badge_Ershad_Raoufi" href="https://www.linkedin.com/in/ershad74/details/skills/">
-                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_C#"  
-                    src="../../assets/Badge/cSharp.jpeg" />
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_JS"    src="../../assets/Badge/Js.jpeg" />
-            </a>
-
-        </div>
-        <div class="col-md-4">
-            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML"  
-                     src="../../assets/Badge/Html.jpeg" />
-            </a>
-
-        </div>
+    <div class="row" *ngIf="!loaded">
+        <ngx-skeleton-loader class="col-md-3" *ngFor="let i of placeholder" count="1" 
+        [theme]="{height:'200px',width:'250px','background-color': 'rgb(211 210 210)'}" 
+        appearance="line"></ngx-skeleton-loader>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
-                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_CSS"    src="../../assets/Badge/CSS.jpeg" />
-            </a>
+    <div class="row" *ngIf="loaded">
 
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <a href="https://www.linkedin.com/in/ershad74/details/skills/">
                 <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_.Net"  
                      src="../../assets/Badge/dotNet.jpeg" />
             </a>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <a href="https://www.linkedin.com/in/ershad74/details/skills/">
                 <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML"  
                      src="../../assets/Badge/FrontEndDeveloper.jpeg" />
             </a>
         </div>
+        <div class="col-md-3">
+            <a title="C#_Badge_Ershad_Raoufi" href="https://www.linkedin.com/in/ershad74/details/skills/">
+                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_C#"  
+                    src="../../assets/Badge/cSharp.jpeg" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
+                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_JS"    src="../../assets/Badge/Js.jpeg" />
+            </a>
+
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
+                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_HTML"  
+                     src="../../assets/Badge/Html.jpeg" />
+            </a>
+
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.linkedin.com/in/ershad74/details/skills/">
+                <img loading="lazy" alt="اشاد رئوفی_Ershad Raoufi_CSS"    src="../../assets/Badge/CSS.jpeg" />
+            </a>
+
+        </div>
     </div>
+    
 
 
 <div class="linkedin">

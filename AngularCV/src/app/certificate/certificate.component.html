@@ -10,7 +10,17 @@
         
     </div>
   
-   <div class="row">
+   
+    <div class="row" *ngIf="certificates.length === 0 && searchItem.length == 0">
+        <div class="col-md-4 center" *ngFor="let item of placeholder" >
+            <ngx-skeleton-loader count="1" [theme]="{height:'200px',width:'250px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+            <ngx-skeleton-loader count="1" [theme]="{height:'30px',width:'250px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+        </div>
+    </div>
+    <div class="row center" *ngIf="!showInhomePage && certificates.length === 0 && searchItem.length > 0">
+        <h5>Sorry I do not have your Require Skill !</h5>
+    </div>
+    <div class="row">
     <div class="col-md-4 center" *ngFor="let item of certificates">
         <figure>
             <!-- <i class="fa fa-certificate fa-2x certificate_badge"></i> -->

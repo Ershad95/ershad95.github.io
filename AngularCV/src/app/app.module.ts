@@ -17,7 +17,7 @@ import { AparatComponent } from './aparat/aparat.component';
 import { LikeComponent } from './like/like.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +46,7 @@ import { environment } from '../environments/environment';
       {path:"",redirectTo:"/home",pathMatch:"full"},
       {path:"**",component:NotFoundComponent}
     ]),
+    NgxSkeletonLoaderModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
