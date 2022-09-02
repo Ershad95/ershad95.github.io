@@ -2,5 +2,12 @@
             id="contact" 
             title="Contact Me!" 
             footer="Update a few minutes">
+            
+    <div class="row" *ngIf="contactItems.length === 0">
+        <div class="col-md-2 center" *ngFor="let item of placeholder" >
+            <ngx-skeleton-loader count="1" [theme]="{height:'170px',width:'200px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+            <ngx-skeleton-loader count="1" [theme]="{height:'30px',width:'200px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+        </div>
+    </div>
     <app-contact-item class="col-md-2" *ngFor="let item of contactItems" [contact]="item"></app-contact-item>
 </app-profile>

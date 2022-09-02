@@ -1,0 +1,63 @@
+{
+  "MenuItems": [
+    {
+      "title": "Home",
+      "icon": "fa fa-home",
+      "active": true,
+      "routing": "/home",
+      "order": 1
+    },
+    {
+      "title": "My Aparat Video",
+      "icon": "fa fa-film",
+      "active": true,
+      "routing": "/aparat",
+      "order": 2
+    },
+    {
+      "title": "My Podcast",
+      "icon": "fa fa-podcast",
+      "active": false,
+      "routing": "/podcast",
+      "order": 3
+    },
+    {
+      "title": "GitHub Repositores",
+      "icon": "fa fa-github",
+      "active": true,
+      "routing": "/git",
+      "order": 4
+    },
+    {
+      "title": "Contact",
+      "icon": "fa fa-contect",
+      "active": true,
+      "routing": "/contact",
+      "order": 5
+    },
+    {
+      "title": "Certifications",
+      "icon": "fa fa-certificate",
+      "active": true,
+      "routing": "/certificate",
+      "order": 6
+    },
+    {
+      "title": "Persian Version",
+      "icon": "fa fa-flag",
+      "active": false,
+      "routing": "/persian",
+      "order": 7
+    }
+  ],
+  "visiblehomePageItem": {
+    "showMyCV": true,
+    "showAparat": true,
+    "showNuget": true,
+    "showRepository": true,
+    "showActivities": true,
+    "showCertifications": true,
+    "showContact": true
+  }
+
+}

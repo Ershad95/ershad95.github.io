@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DelayService} from '../Service/DealyService'
 
 @Component({
   selector: 'app-linkedin',
@@ -11,10 +12,8 @@ export class LinkedinComponent implements OnInit {
   loaded=false;
   placeholder:number[]=[1,2,3,4,5,6];
   async ngOnInit(): Promise<void> {
-    await this.delay(2500);
+    await new DelayService().delay(2500)
     this.loaded=true;
   }
-  delay(ms: number) {
-    return new Promise( resolve => setTimeout(resolve, ms) );
-}
+  
 }
