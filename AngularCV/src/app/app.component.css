@@ -1,0 +1,8 @@
+.adminBtn{
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    z-index: 10;
+    border-radius: 100%;
+    height: 100px;
+}

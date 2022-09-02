@@ -1,6 +1,6 @@
 import { Component, Input, OnInit,AfterContentInit } from '@angular/core';
 import CertificateModel from "../Model/CertificateModel"
-import {DelayService} from '../Service/DealyService'
+import {DelayService} from '../Service/dealy.service'
 import {CertificateService} from "../Service/certificate.service"
 @Component({
   selector: 'app-certificate',
@@ -15,7 +15,7 @@ export class CertificateComponent implements OnInit,AfterContentInit{
   searchItem:string = "";
 
   @Input() showInhomePage : boolean=false;
-  constructor(private service : CertificateService) { 
+  constructor(private service : CertificateService,private delayService:DelayService) { 
     
   }
   
@@ -26,7 +26,7 @@ export class CertificateComponent implements OnInit,AfterContentInit{
     }else{
       this.placeholder = [1,2,3,4,5,6,7,8,9]
     }
-    await new DelayService().delay(2500)
+    await this.delayService.delay(2500)
     this.prepareData();
 
   }

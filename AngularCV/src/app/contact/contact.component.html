@@ -1,4 +1,4 @@
-<app-profile *ngIf="showInHomePage"
+<app-profile *ngIf="(showInHomePage && VisiblityConfig.showContact) || showInHomePage"
             id="contact" 
             title="Contact Me!" 
             footer="Update a few minutes">

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +19,9 @@ import { LikeComponent } from './like/like.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,10 +35,14 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     ContactItemComponent,
     CertificateComponent,
     AparatComponent,
-    LikeComponent
+    LikeComponent,
+    MenuComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     RouterModule.forRoot([
       {path:"home",component:HomeComponent},
@@ -43,6 +51,8 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
       {path:"contact",component:ContactComponent},
       {path:"certificate",component:CertificateComponent},
       {path:"aparat",component:AparatComponent},
+      {path:"login",component:LoginComponent},
+      {path:"admin",component:AdminComponent},
       {path:"",redirectTo:"/home",pathMatch:"full"},
       {path:"**",component:NotFoundComponent}
     ]),

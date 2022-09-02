@@ -4,35 +4,9 @@
     </a>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#cv" style="visibility:hidden"><i
-                        class="fa fa-user-circle-o"></i> My CV</a>
+<button *ngIf="IsAdmin" class="btn btn-success adminBtn" (click)="adminPage()">Admin Page</button>
 
-                <a routerLinkActive="activeLinkItem" class="nav-link" aria-current="page" routerLink="/home"><i
-                        class="fa fa-home"></i> Home</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link" routerLink="aparat"><i class="fa fa-film"></i>My
-                    Aparat Video</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link disabled" href=""><i class="fa  fa-podcast"></i> My
-                    Podcast</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link" routerLink="git"><i class="fa fa-github"></i>
-                    GitHub Repositores</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link" routerLink="contact"><i
-                        class="fa fa-phone-square"></i> Contact</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link" routerLink="certificate"><i
-                        class="fa fa-certificate"></i>Certifications</a>
-                <a routerLinkActive="activeLinkItem" class="nav-link disabled" href="/persian"><i
-                        class="fa fa-flag"></i>Persian Version</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<app-menu></app-menu>
 <router-outlet></router-outlet>
 <app-contact [showInHomePage]=true></app-contact>
 

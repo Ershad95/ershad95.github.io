@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EncryptionService } from '../Service/encryptionService';
+import { VisiblehomePageItem } from '../Model/ConfigModel';
+import { ConfigService } from '../Service/config.service';
+
 
 @Component({
   selector: 'app-home',
@@ -8,21 +10,14 @@ import { EncryptionService } from '../Service/encryptionService';
 })
 export class HomeComponent implements OnInit {
 
-  src:string="";
-  des:string="";
-  constructor(private security : EncryptionService) {
 
-
-
+  VisiblityConfig : VisiblehomePageItem;
+  constructor(private config:ConfigService) {
+    this.VisiblityConfig = config.GetHomePageConfig();
    }
 
   ngOnInit(): void {
 
-    this.src = this
-    .security
-    .encryptUsingTripleDES('[{"imageUrl": "../../assets/certificates/mongo.jpeg", "altImage": "Mongo Univercity Certification Asp.net MVC Core MasterClass  ارشاد رئوفی", "url": "https://www.udemy.com/", "showInHomePage": true,"title": "Mongo Certification MongoDb For SQL Pros"}]',false)
-    this.des = this.security
-    .decryptUsingTripleDES(this.src);
   }
 
 
