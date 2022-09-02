@@ -1,6 +1,6 @@
 import { Component, Input, OnInit,AfterContentInit } from '@angular/core';
 import CertificateModel from "../Model/CertificateModel"
-
+import {DelayService} from '../Service/DealyService'
 import {CertificateService} from "../Service/certificate.service"
 @Component({
   selector: 'app-certificate',
@@ -18,9 +18,7 @@ export class CertificateComponent implements OnInit,AfterContentInit{
   constructor(private service : CertificateService) { 
     
   }
-  delay(ms: number) {
-    return new Promise( resolve => setTimeout(resolve, ms) );
-}
+  
   async ngAfterContentInit(): Promise<void> {
     
     if(this.showInhomePage){
@@ -28,7 +26,7 @@ export class CertificateComponent implements OnInit,AfterContentInit{
     }else{
       this.placeholder = [1,2,3,4,5,6,7,8,9]
     }
-     await this.delay(2500);
+    await new DelayService().delay(2500)
     this.prepareData();
 
   }
