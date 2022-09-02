@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit,AfterContentInit } from '@angular/core';
 import CertificateModel from "../Model/CertificateModel"
 
 import {CertificateService} from "../Service/certificate.service"
@@ -7,25 +7,42 @@ import {CertificateService} from "../Service/certificate.service"
   templateUrl: './certificate.component.html',
   styleUrls: ['./certificate.component.css']
 })
-export class CertificateComponent implements OnInit {
+export class CertificateComponent implements OnInit,AfterContentInit{
 
 
    certificates:CertificateModel[]=[];
+   placeholder:number[]=[];
   searchItem:string = "";
 
   @Input() showInhomePage : boolean=false;
   constructor(private service : CertificateService) { 
     
   }
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+}
+  async ngAfterContentInit(): Promise<void> {
+    
+    if(this.showInhomePage){
+      this.placeholder = [1,2,3]
+    }else{
+      this.placeholder = [1,2,3,4,5,6,7,8,9]
+    }
+     await this.delay(2500);
+    this.prepareData();
+
+  }
+  
   change(){
     this.prepareData();
   }
   
   ngOnInit(): void {
-    this.prepareData();
+    
   }
 
   prepareData():CertificateModel[]{
+    
     if(!this.showInhomePage){
       this.certificates = this.service.GetAllCertificate(this.searchItem);
     }else{

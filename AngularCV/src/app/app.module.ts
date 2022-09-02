@@ -15,7 +15,9 @@ import { ContactItemComponent } from './contact/contact-item/contact-item.compon
 import { CertificateComponent } from './certificate/certificate.component';
 import { AparatComponent } from './aparat/aparat.component';
 import { LikeComponent } from './like/like.component';
-
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,14 @@ import { LikeComponent } from './like/like.component';
       {path:"aparat",component:AparatComponent},
       {path:"",redirectTo:"/home",pathMatch:"full"},
       {path:"**",component:NotFoundComponent}
-    ])
+    ]),
+    NgxSkeletonLoaderModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
