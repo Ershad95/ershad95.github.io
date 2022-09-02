@@ -19,6 +19,11 @@ export class EncryptionService {
     return encrypted.toString();
   }
 
+  encrypteSha256(text:string):string{
+    const encrypted = CryptoJS.SHA256(text);
+    return encrypted.toString(CryptoJS.enc.Hex);
+  }
+
   // DECRYPTION USING CBC TRIPLE DES
   decryptUsingTripleDES(encrypted: string): string {
     const keyHex = CryptoJS.enc.Utf8.parse(EncryptionService.key);
