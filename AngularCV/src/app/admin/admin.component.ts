@@ -11,10 +11,15 @@ export class AdminComponent implements OnInit {
 
   constructor(private loginService: LoginServiceService, private route: Router,) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    if (!this.loginService.isAdminLogin()) {
+      alert("Please Login!");
+      this.route.navigate(['/login']); // navigate to login page
+    }
+  }
 
   logout() {
     this.loginService.logout();
-    this.route.navigate(['/home']); // navigate to admin page
+    this.route.navigate(['/home']); // navigate to home page
   }
 }

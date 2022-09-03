@@ -10,22 +10,17 @@ export class LoginServiceService {
   private static readonly UserHash:string = "da53e61b6457e6a666778cdbfd3055f3cb6787f929c9340012645231ac19a258";
   private static readonly PassHash:string = "8d6c5597d25eca212ea6c6cacc0a02e247b8c631343a70147cb81374ff72f414";
   private static readonly cookieName:string = "login";
-  constructor(private security:EncryptionService) { 
-
-
-  }
+  constructor(private security:EncryptionService) { }
 
   cookieValidate():boolean{
- 
      let cookie = this.getCookie("login");
      if(!(cookie && cookie.length>5))
          return false;
-     let encrypteUsername =this.security.encrypteSha256(cookie);
-     return  encrypteUsername === LoginServiceService.UserHash
+     return  cookie === LoginServiceService.UserHash
       
   }
-  makeCookieLogin(username:string){
-    this.setCookie('login',username,30);
+  makeCookieLogin(username:string,Remeber:boolean){
+    this.setCookie('login',this.security.encrypteSha256(username),Remeber?30:0.5);
   }
   isAdminLogin():boolean{
     return this.cookieValidate();

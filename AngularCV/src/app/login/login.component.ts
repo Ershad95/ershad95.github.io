@@ -41,9 +41,8 @@ export class LoginComponent implements OnInit {
     let formData = this.loginForm.value;
     let result = this.loginService.loginToAdminPage(formData.username ?? '', formData.password ?? '');
     if (result) {
-      if (formData.remember ?? false) {
-        this.loginService.makeCookieLogin(formData.username ?? '');
-      }
+      this.loginService.makeCookieLogin(formData.username ?? '',formData.remember ?? false);
+      
       this.loginFaild = false;
 
       this.route.navigate(['/admin']); // navigate to admin page
