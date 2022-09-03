@@ -11,8 +11,12 @@
 
     <div class="row" *ngIf="certificates.length === 0 && searchItem.length == 0">
         <div class="col-md-4 center" *ngFor="let item of placeholder" >
-            <ngx-skeleton-loader count="1" [theme]="{height:'200px',width:'250px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+            <div>
+                <ngx-skeleton-loader count="1" [theme]="{height:'200px',width:'250px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+            </div>
+           <div>
             <ngx-skeleton-loader count="1" [theme]="{height:'30px',width:'250px','background-color': 'rgb(211 210 210)'}" appearance="line"></ngx-skeleton-loader>
+           </div>
         </div>
     </div>
     <div class="row center" 
