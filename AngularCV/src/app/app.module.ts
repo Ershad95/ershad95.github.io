@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -64,7 +64,7 @@ import { AdminComponent } from './admin/admin.component';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy } ],
   bootstrap: [AppComponent]
 })
 
